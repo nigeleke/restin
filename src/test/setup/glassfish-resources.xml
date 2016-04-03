@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE resources PUBLIC "-//GlassFish.org//DTD GlassFish Application Server 3.1 Resource Definitions//EN" "http://glassfish.org/dtds/glassfish-resources_1_5.dtd">
+<resources>
+    <jdbc-connection-pool name="derby_net_restin_APPPool"
+            datasource-classname="org.apache.derby.jdbc.EmbeddedDataSource"
+            res-type="javax.sql.DataSource" ping="true">
+
+        <property name="databaseName" value="memory:restin"  />
+        <property name="connectionAttributes" value=";create=true"  />
+        <property name="user" value="APP" />
+        <property name="password" value="APP" />
+        <property name="driverClass" value="org.apache.derby.jdbc.EmbeddedDriver" />
+
+    </jdbc-connection-pool>
+    <jdbc-resource jndi-name="restin" pool-name="derby_net_restin_APPPool" object-type="user" enabled="true" />
+</resources>
