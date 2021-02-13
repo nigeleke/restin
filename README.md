@@ -7,5 +7,3 @@ See my [blog post](http://nigel-eke.com/unit-integration-testing-rest-services/)
 # Note
 
 This repository is being archived - to allow the blog post link to be relevant.
-
-Github warns of a security issue (low risk) in pom.xml for junit:junit.
